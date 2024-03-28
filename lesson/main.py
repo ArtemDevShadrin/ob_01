@@ -1,27 +1,8 @@
-class Warrior():
-    def __init__(self, name, power, endurance, hair_color):
-        self.name = name
-        self.power = power
-        self.endurance = endurance
-        self.hair_color = hair_color
+from lesson.class_Warrior import Warrior
 
-    def sleep(self):
-        print(f"{self.name} - лег спать")
-        self.endurance += 2
+war_1 = Warrior("Степа", 76, 54, "коричневый")
+war_2 = Warrior("Егор", 70, 60, "черный")
 
-    def eat(self):
-        print(f"{self.name} - сел кушать")
-        self.power += 1
-
-    def hit(self):
-        print(f"{self.name} - наносит удар")
-        self.endurance -= 1
-
-    def walk(self):
-        print(f"{self.name} - гуляет")
-
-    def info(self):
-        print(f"Имя - {self.name}\n"
-              f"Сила - {self.power}\n"
-              f"Выносливость - {self.endurance}\n"
-              f"Цвет волос  - {self.hair_color}\n")
+war_1.info()
+war_1.sleep()
+war_1.info()
