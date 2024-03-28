@@ -1,4 +1,4 @@
-from lesson.class_Warrior import Warrior
+from lesson.game.class_Warrior import Warrior
 
 war_1 = Warrior("Степа", 76, 54, "коричневый")
 war_2 = Warrior("Егор", 70, 60, "черный")
